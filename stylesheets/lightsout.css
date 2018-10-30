@@ -1,0 +1,82 @@
+#lightsout * {
+    box-sizing: border-box;
+}
+
+#lightsout {
+    width: 10em;
+    margin: auto;
+    text-align: center;
+}
+
+#lightsout-timer {
+    width: 15em;
+
+    font-size: 2em;
+    text-align: center;
+
+    margin: auto;
+}
+
+#lightsout-board {
+    font-size: 2em;
+
+    width: 15em;
+    height: 15em;
+
+    display: grid;
+    grid-template-columns: repeat(5, 3em);
+
+    background-color: rgb(75, 75, 75);
+
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+#endGame-overlay {
+    position: absolute;
+    font-size: 1em;
+
+    box-sizing: border-box;
+    /* two different approaches to matching size :) */
+    height: inherit; /* This one's less pretty, but more robust */
+    width: calc(15em - 1px);
+
+    background-color: rgba(214, 242, 140, .75);
+    border: 1px solid black;
+    z-index: 100;
+}
+
+.lightsout-square {
+    width: 3em;
+    height: 3em;
+
+    grid-row-start: auto;
+    grid-column-start: auto;
+
+
+    border: 1px solid black;
+}
+
+.js-lightsout-square-on {
+    background-color: rgb(252, 253, 246);
+}
+
+.board-sized-container {
+  font-size: 2em;
+
+  width: 15em;
+  height: 15em;
+
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+#lightsout-newgame-btn {
+    display: block;
+
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 0.3em;
+}
