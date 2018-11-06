@@ -2,6 +2,7 @@
 const primaryImageContainer = document.querySelector(".primaryImageContainer")
 const randomTo15 = function(){return Math.floor(Math.random()*16)}
 const url = 'https://gist.githubusercontent.com/ChrisKeefe/cc60c871074ee5be03bbea73ccb45090/raw/f10fec188daf185aad16766ad1db8c47899c4a60/CanyonImages.JSON'
+const article = document.getElementsByTagName('article').item(0)
 const imageList = [];
 
 fetch(url)
@@ -12,19 +13,22 @@ fetch(url)
   })
   .then(function(json) {
     imageList.push(...json.images);
-    //get length of imageList (pass to addFeaturesToImage)
-    generateRdmImage()
-
+    // TODO: get length of imageList (pass to addFeaturesToImage)
+    insertRdmImage()
   })
 
 
-function generateRdmImage() {
+function insertRdmImage() {
   // once we have length of imageList, pass that in to this function
   // then generate an array of ids, and pop them as we assign them to images
   // this should prevent duplication
-  const img = document.createElement("img")
   const id = randomTo15()
-  console.log(id)
+
+  const photoTitle = document.createElement("h2")
+  photoTitle.innerText = imageList[id].title
+  article.insertBefore(photoTitle, article.firstChild)
+
+  const img = document.createElement("img")
   img.classList.add("primaryImage")
   img.src = imageList[id].image.src
   img.alt = imageList[id].caption
