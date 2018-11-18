@@ -1,0 +1,18 @@
+.primaryImage {
+  box-sizing: border-box;
+
+  background-color: white;
+  border: 1px solid black;
+
+  height: 500%;
+  margin: auto;
+  /* margin-bottom: 20px; */
+}
+
+.primaryImageContainer {}
+
+.data-credit {}
+
+.attribution {}
+
+.caption {}
