@@ -1,18 +1,33 @@
 .primaryImage {
-  box-sizing: border-box;
+  display:block;
+  margin: auto;
 
   background-color: white;
   border: 1px solid black;
-
-  height: 500%;
-  margin: auto;
-  /* margin-bottom: 20px; */
 }
 
-.primaryImageContainer {}
+.primaryImageContainer {
+  margin: auto;
+}
 
-.data-credit {}
+.data-credit {
+  font-size: 8pt;
 
-.attribution {}
+  display:block;
+  margin: auto;
 
-.caption {}
+}
+
+.attribution {
+  font-size: 8pt;
+
+  display:block;
+  margin: auto;
+}
+
+.caption {
+  font-size: 14pt;
+
+  display:block;
+  margin: auto;
+}
