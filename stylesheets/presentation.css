@@ -65,7 +65,7 @@ section{
 footer{
   background-color: var(--alt-bg-color);
   color: var(--alt-font-color);
-  height: 60px;
+  max-height: 50px;
   margin-bottom: 0%;
   margin-top: 0%;
   padding-bottom: 0%;
