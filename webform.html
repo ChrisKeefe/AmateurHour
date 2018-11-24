@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
+        <link href="stylesheets/layout.css" type="text/css" rel="stylesheet">
+        <link href="stylesheets/presentation.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Chris Keefe: Not a Front-End Developer</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id=titleheader>Chris Keefe</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li><a href="lightsout.html">Lights Out!</a></li>
+        <li><a href="canyonImages.html">Canyon Images</a></li>
+      </ul>
+    </nav>
+    <article>
+      <section>
+        <h2 class=h2-content>User Registration</h2>
+        <form class=body-content>
+        <h3>Get non-existent updates, never</h3>
+        First Name:<br />
+         <input type="text" name="firstname"><br /><br />
+         Phone Number:<br />
+         <input type="tel" name="phone" placeholder="(###)###-####" pattern='\(]\d{3}[\)]\d{3}[\-]\d{4}'/><br /><br />
+         Email: <br />
+         <input type="email" name="email" /><br /><br />
+         Would you rather spend your time:<br />
+         <input type="radio" name="environment" value="inside" checked>Inside<br />
+         <input type="radio" name="environment" value="outside">Outside<br />
+         <input type="radio" name="environment" value="other">What are these concepts? I live in a purely virtual world.<br /><br />
+         Tell us about your favorite food as a child?<br />
+         <textarea rows="5" cols="50" name="foodStory" placeholder="250 characters max" maxlength="256"></textarea><br /><br />
+         <input type="submit" value="Submit">
+       </form>
+
+    </article>
+    <footer>
+      <div class=footer-bar>
+        <p>
+          &copy; Chris Keefe 2018
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
