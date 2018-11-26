@@ -12,10 +12,13 @@
         <p> Your email address is <%= locals.email %></p>
         <p> You'd rather spend your time <%= locals.environment%></p>
         <p> Once, you told us this story: <%= locals.foodStory %></p>
-        <!-- add button/link to return to form -->
+        <a href="webform.html">Return to webform</a>
     </body>
 </html>
 <% } else { %>
+<!-- TODO: render locals values into fields if they exist -->
+<!-- This could be done by setting input tag values = "", and using inline js to re-set if values are not undefined -->
+<!-- alternately, it might be possible to auto-load field values from locals every time, if those fields are valid/if locals exists-->
 <html>
   <head>
     <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
