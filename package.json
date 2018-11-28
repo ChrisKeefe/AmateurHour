@@ -1,0 +1,21 @@
+{
+  "name": "amateurHour",
+  "version": "1.0.0",
+  "description": "Ugly web dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ChrisKeefe",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ChrisKeefe/AmateurHour.git"
+  }
+}

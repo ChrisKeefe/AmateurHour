@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<% if (locals.firstname) { %>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <h1> Hello <%= locals.firstname %></h1>
+        <p> Your phone number is <%= locals.phone %></p>
+        <p> Your email address is <%= locals.email %></p>
+        <p> You'd rather spend your time <%= locals.environment%></p>
+        <p> Once, you told us this story: <%= locals.foodStory %></p>
+        <a href="webform.html">Return to webform</a>
+    </body>
+</html>
+<% } else { %>
+<html>
+  <head>
+    <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
+    <link href="stylesheets/layout.css" type="text/css" rel="stylesheet">
+    <link href="stylesheets/presentation.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Chris Keefe: Not a Front-End Developer</title>
+  </head>
+  <body>
+    <header>
+      <h1 id=titleheader>Chris Keefe</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li><a href="lightsout.html">Lights Out!</a></li>
+        <li><a href="canyonImages.html">Canyon Images</a></li>
+      </ul>
+    </nav>
+    <article>
+      <section>
+        <h2 class=h2-content>User Registration</h2>
+        <form class=body-content method="post">
+        <h3>Get non-existent updates, never</h3>
+        First Name:<br />
+         <input type="text" name="firstname" required=true><br /><br />
+         Phone Number:<br />
+         <input type="tel" name="phone" placeholder="###-###-####" pattern='\d{3}[\-]\d{3}[\-]\d{4}' required=true><br /><br />
+         Email: <br />
+         <input type="email" name="email" required=true><br /><br />
+         Would you rather spend your time:<br />
+         <input type="radio" name="environment" value="inside" required=true>Inside<br />
+         <input type="radio" name="environment" value="outside" required=true>Outside<br />
+         <input type="radio" name="environment" value="in a virtual world" required=true>What are these concepts? I live in a purely virtual world.<br /><br />
+         Tell us about your favorite food as a child?<br />
+         <textarea rows="5" cols="50" name="foodStory" placeholder="250 characters max" maxlength="250" required=true></textarea><br /><br />
+         <input type="submit" name="submit-btn" value="Submit">
+       </form>
+    </article>
+    <footer>
+      <div class=footer-bar>
+        <p>
+          &copy; Chris Keefe 2018
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<% } %>
