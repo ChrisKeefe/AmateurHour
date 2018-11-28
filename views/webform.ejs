@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- TODO: if everything perfect -->
 <% if (locals.firstname) { %>
 <html>
     <head>
@@ -15,9 +14,6 @@
     </body>
 </html>
 <% } else { %>
-<!-- TODO: render locals values into fields if they exist -->
-<!-- This could be done by setting input tag values = "", and using inline js to re-set if values are not undefined -->
-<!-- alternately, it might be possible to auto-load field values from locals every time, if those fields are valid/if locals exists-->
 <html>
   <head>
     <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
@@ -47,12 +43,8 @@
         <h3>Get non-existent updates, never</h3>
         First Name:<br />
          <input type="text" name="firstname" required=true><br /><br />
-
-         <!-- TODO: if phonenumber broken, render div PH broken -->
          Phone Number:<br />
-         <input type="tel" name="phone" placeholder="(###)###-####" pattern='\(]\d{3}[\)]\d{3}[\-]\d{4}'/ required=true><br /><br />
-
-
+         <input type="tel" name="phone" placeholder="###-###-####" pattern='\d{3}[\-]\d{3}[\-]\d{4}' required=true><br /><br />
          Email: <br />
          <input type="email" name="email" required=true><br /><br />
          Would you rather spend your time:<br />
