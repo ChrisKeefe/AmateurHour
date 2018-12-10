@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<% if (locals.firstname) { %>
-<html>
-    <head>
-    </head>
-
-    <body>
-        <h1> Hello <%= locals.firstname %></h1>
-        <p> Your phone number is <%= locals.phone %></p>
-        <p> Your email address is <%= locals.email %></p>
-        <p> You'd rather spend your time <%= locals.environment%></p>
-        <p> Once, you told us this story: <%= locals.foodStory %></p>
-        <a href="webform.html">Return to webform</a>
-    </body>
-</html>
-<% } else { %>
 <html>
   <head>
     <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
@@ -65,4 +50,3 @@
     </footer>
   </body>
 </html>
-<% } %>
